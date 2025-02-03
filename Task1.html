@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+
+
+    <title>Grid Task</title>
+
+
+
+    <style>
+        body {
+            padding: 10px;
+
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .grid-3 .box {
+            width: calc(100% / 3 - 10px);
+        }
+
+        .grid-3 .box1 {
+            width: calc(33.33% - 10px);
+        }
+
+        .grid-2 .box {
+            width: calc(50% - 10px);
+        }
+
+        .grid-4 .box {
+            width: calc(100%/4 - 11px);
+        }
+
+        .grid-5 .box {
+            width: calc(20% - 12px);
+        }
+
+        .box {
+            height: 200px;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .box img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .box1 {
+            height: 200px;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .box1 img {
+            max-width: 50px;
+            max-height: 50px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="flex-container">
+
+
+        <div class="row grid-3">
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Approve_icon.svg/1024px-Approve_icon.svg.png "
+                    alt="Image"></img>
+            </div>
+            <div class="box1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Approve_icon.svg/1024px-Approve_icon.svg.png "
+                    alt="Image"></img>
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+
+        </div>
+
+
+        <div class="row grid-2">
+            <div class="box"></div>
+            <div class="box"></div>
+
+        </div>
+
+
+        <div class="row grid-4">
+            <div class="box"></div>
+            <div class="box"> </div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+
+        <div class="row grid-5">
+            <div class="box"></div>
+            <div class="box"> </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
